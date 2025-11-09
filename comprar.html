@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💧Pura Gota</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pura Gota - Loja de Água</h1>
+        <button id="ver-carrinho" class="btn btn-secondary">
+            🛒 Carrinho (<span id="contador-carrinho">0</span>)
+        </button>
+        <button id="logout" class="btn btn-secondary">Sair</button>
+    </header>
+
+    <main>
+        <h2>Escolha a sua água:</h2>
+        
+        <section id="lista-produtos" class="product-grid">
+            </section>
+
+        <div id="modal-carrinho" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3>🛒 Seu Carrinho</h3>
+                <ul id="itens-carrinho">
+                    </ul>
+                <p>Total: R$ <span id="carrinho-total">0.00</span></p>
+                
+                <button id="finalizar-compra" class="btn btn-primary">
+                    Finalizar Compra
+                </button>
+                <button id="fechar-carrinho" class="btn btn-secondary">
+                    Continuar Comprando
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="vendas.js"></script>
+</body>
+</html>
