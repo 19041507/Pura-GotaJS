@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (usuario === storedLogin && senha === storedPass) {
             alert(`✅ Login bem-sucedido! Redirecionando para a loja...`);
             
-            // 🚀 CÓDIGO FINAL CORRIGIDO: USANDO O CAMINHO ABSOLUTO EXATO DO SEU DISCO
-            window.location.href = 'file:///C:/Users/orcfo/OneDrive/Área%20de%20Trabalho/PuraGota/comprar.html'; 
+            // 🚀 CORREÇÃO FINAL: Usando caminho relativo, que funciona no GitHub Pages
+            window.location.href = 'comprar.html'; 
             
         } else {
             alert('❌ Credenciais inválidas. Verifique seu nome e senha.');
