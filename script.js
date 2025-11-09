@@ -35,8 +35,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (usuario === storedLogin && senha === storedPass) {
             alert(`✅ Login bem-sucedido! Redirecionando para a loja...`);
             
-            // 🚀 CORREÇÃO FINAL: Usando caminho relativo, que funciona no GitHub Pages
-            window.location.href = 'comprar.html'; 
+            // 🚀 CORREÇÃO FINAL PARA GITHUB PAGES:
+            // Usando o caminho "/NOME_DO_REPOSITORIO/nome_do_arquivo.html"
+            window.location.href = '/Pura-GotaJS/comprar.html'; 
             
         } else {
             alert('❌ Credenciais inválidas. Verifique seu nome e senha.');
